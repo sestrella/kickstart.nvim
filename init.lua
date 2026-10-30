@@ -729,8 +729,6 @@ do
   --  See `:help lsp-config` for information about keys and how to configure
   ---@type table<string, vim.lsp.Config>
   local servers = {
-    terraformls = {},
-
     -- clangd = {},
     -- gopls = {},
     -- pyright = {},
@@ -743,6 +741,7 @@ do
     -- rust_analyzer = {},
 
     stylua = {}, -- Used to format Lua code
+    terraformls = {},
 
     -- Special Lua Config, as recommended by neovim help docs
     lua_ls = {
@@ -826,6 +825,7 @@ do
       local enabled_filetypes = {
         -- lua = true,
         -- python = true,
+        terraform = true,
       }
       if enabled_filetypes[vim.bo[bufnr].filetype] then
         return { timeout_ms = 500 }
