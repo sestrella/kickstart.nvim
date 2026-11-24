@@ -740,8 +740,8 @@ do
     -- But for many setups, the LSP (`rust_analyzer`) will work just fine
     -- rust_analyzer = {},
 
-    terraformls = {},
     stylua = {}, -- Used to format Lua code
+    terraformls = {},
 
     -- Special Lua Config, as recommended by neovim help docs
     lua_ls = {
