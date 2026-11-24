@@ -171,6 +171,12 @@ do
   -- instead raise a dialog asking if you wish to save the current file(s)
   -- See `:help 'confirm'`
   vim.o.confirm = true
+
+  vim.filetype.add {
+    pattern = {
+      ['.*/%.github/workflows/.*%.ya?ml'] = 'yaml.ghworkflow',
+    },
+  }
 end
 
 -- ============================================================
@@ -823,7 +829,7 @@ do
     format_on_save = function(bufnr)
       -- You can specify filetypes to autoformat on save here:
       local enabled_filetypes = {
-        -- lua = true,
+        lua = true,
         -- python = true,
         terraform = true,
       }
