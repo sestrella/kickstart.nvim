@@ -659,8 +659,8 @@ do
   -- and elegantly composed help section, `:help lsp-vs-treesitter`
 
   -- Useful status updates for LSP.
-  vim.pack.add { gh 'j-hui/fidget.nvim' }
-  require('fidget').setup {}
+  -- vim.pack.add { gh 'j-hui/fidget.nvim' }
+  -- require('fidget').setup {}
 
   --  This function gets run when an LSP attaches to a particular buffer.
   --    That is to say, every time a new file is opened that is associated with

@@ -14,10 +14,6 @@
       "rev": "016802de402556da54c36bd7359b441266b01cdd",
       "src": "https://github.com/stevearc/conform.nvim"
     },
-    "fidget.nvim": {
-      "rev": "9e0201673e08e997e7cf52afca5565c70bd117f3",
-      "src": "https://github.com/j-hui/fidget.nvim"
-    },
     "gitsigns.nvim": {
       "rev": "e8f006abb20133f4914309d6173824dfedd8fd80",
       "src": "https://github.com/lewis6991/gitsigns.nvim"
