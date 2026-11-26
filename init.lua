@@ -746,9 +746,6 @@ do
     -- But for many setups, the LSP (`rust_analyzer`) will work just fine
     -- rust_analyzer = {},
 
-    stylua = {}, -- Used to format Lua code
-    terraformls = {},
-
     -- Special Lua Config, as recommended by neovim help docs
     lua_ls = {
       on_init = function(client)
@@ -777,6 +774,21 @@ do
       settings = {
         Lua = {
           format = { enable = false }, -- Disable formatting (formatting is done by stylua)
+        },
+      },
+    },
+
+    stylua = {}, -- Used to format Lua code
+    terraformls = {},
+    yamlls = {
+      settings = {
+        yaml = {
+          format = {
+            enable = true,
+          },
+          schemas = {
+            ['https://json.schemastore.org/github-workflow.json'] = '.github/workflows/*',
+          },
         },
       },
     },
